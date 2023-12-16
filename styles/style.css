@@ -1,15 +1,18 @@
 .header{
   display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1fr;
-  padding: 92px 24px 2904px;
+  padding: 92px 24px 83px;
 
 }
-
-.header__links-list{
+.header__menu{
   grid-column-start: 1;
   grid-column-end: 2;
+  justify-self: flex-start;
+  align-self: center;
+}
+.header__links-list{
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -38,7 +41,6 @@
   grid-column-start: 2;
   grid-column-end: 3;
   justify-self: center;
-  display: block;
   width: 148px;
 }
 
@@ -49,14 +51,112 @@
 .address{
   grid-column-start: 3;
   grid-column-end: 4;
+  justify-self: flex-end;
   color: #000;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24.3px;
+  text-underline-position: under;
 }
 
 .header__address{
   width: 240px;
+}
+
+.cover{
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  background-color: lightgray;
+  height: 764px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.overlay{
+  height: 764px;
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  inset: 0;
+}
+
+.cover__title{
+  padding: 174px 24px 94px;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase; 
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+.aligned-text{
+  letter-spacing: 4px;
+}
+
+.aligned-text_center{
+  text-align: center;
+}
+
+.aligned-text_right{
+  text-align: right;
+}
+
+.letter-spacing-extended{
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing{
+  letter-spacing: 0px;
+}
+
+.cover__description{
+  padding:0px 24px;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.cover__description-text{
+  word-spacing: 17px;
+
+}
+
+.bet-button{
+  width: 257px;
+  height: 52px;
+  background-color: transparent;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+  
 }
