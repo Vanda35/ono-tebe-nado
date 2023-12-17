@@ -298,3 +298,36 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.footer{
+  margin: 174px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu-list{
+  list-style: none;
+}
+
+.footer__menu-list-item{
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__menu-link_active{
+  text-decoration: none;
+}
+
+.footer__social-list{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 44px;
+}
+
+.footer__social-icon{
+  height: 48px;
+}
