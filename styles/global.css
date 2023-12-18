@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: Raleway, sans-serif;
   background-color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 h1,
